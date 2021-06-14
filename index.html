@@ -2,46 +2,127 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scratch game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="sortcut icon" href="nobel icon.png" type="nobel icon.png" />;
+  <!-- Carrossel -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <!-- Rodapé -->
 </head>
 
-<body style="background-color:powderblue;">
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
 
-    <header>
-        <h1>Titulo do site legal</h1>
-    </header>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="Nobel.jpg" alt="Nobel" style="width:100%" ;>
+            <div class="carousel-caption">
+              <h3>Prêmio Nobel</h3>
+              <h1>Prêmio Nobel é um conjunto de seis prêmios internacionais anuais concedidos em várias categorias por
+                instituições suecas e norueguesas, para reconhecer pessoas ou instituições que realizaram pesquisas,
+                descobertas ou contribuições notáveis para a humanidade no ano imediatamente anterior ou no curso de
+                suas atividades.</h1>
+            </div>
+          </div>
 
-    <div>
-        <h1>Jogo do mário</h1>
+          <div class="item">
+            <img src="Turing.jpg" alt="Turing" width="1920" style="width:100%" ;>
+            <div class="carousel-caption">
+              <h3>Prêmio Turing</h3>
+              <h1>O Prêmio Turing é concedido anualmente pela Association for Computing Machinery para uma pessoa
+                selecionada por contribuições à computação. As contribuições devem ser duradouras e fundamentais no
+                campo computacional.</h1>
+            </div>
+          </div>
 
-        <iframe id="frame" src="https://scratch.mit.edu/projects/540639142/embed" allowtransparency="true" width="485"
-            height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+  </header>
 
-        <p>
-            O jogo consiste em pular o inimigos utilizando as teclas 'W A S D' para o player 1 
-            e as setas para o player 2 e garantir a maior pontuação possível.
+
+  <!-- Conteúdo do site -->
+  <main class="container">
+    <div class="jogoForca">
+      <iframe src="https://scratch.mit.edu/projects/537134969/embed" allowtransparency="true" width="485" height="402"
+        frameborder="0" scrolling="no" allowfullscreen></iframe>
+      </iframe>
+      <p>Este jogo da forca traz informações sobre os projetos que trouxeram alguns ganhadores do Prêmio Nobel e Prêmio Turing,
+        de forma divertida e interativa.
+      </p>
+      <div class="jogoForca">
+        <iframe src="https://scratch.mit.edu/projects/540639142/embed" allowtransparency="true" width="485" height="402"
+          frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </iframe>
+        <p>Este jogo do Mario traz uma interação muito legal entre os jogadores que podem competir para ver quem
+          consegue sobreviver mais tempo.
+          Como jogar: Player 1 - Use as teclas W,A,S,D para se movimentar e Player 2 - Use as setas para se mexer.
         </p>
+        <div class="cientistas">
+          <img src="img/hanrahan.jpg" width="485" height="402">
+          <p>Patrick M. Hanrahan é um cientista de computação gráfica, professor de ciência da computação e engenharia
+            elétrica na Universidade Stanford, Califórnia. Sua pesquisa é focada em algoritmos de renderização, GPU's,
+            bem como ilustração e visualização científica.<a href="https://pt.wikipedia.org/wiki/Pat_Hanrahan"
+              target="_blank">Wikipedia</a></p>
+          <img src="img/ivan.jpg" width="485" height="402">
+          <p>Ivan Edward Sutherland é um informático estadunidense. É um dos pioneiros da Internet. Desenvolveu o
+            Head-Mounted-display, em 1968. Criou o Sketchpad, em 1963, uma aplicação gráfica inovadora. Em 2012 recebeu
+            o Prêmio Kyoto por "realizações pioneiras no desenvolvimento da computação gráfica e interfaces
+            interativas".<a href="https://pt.wikipedia.org/wiki/Ivan_Sutherland" target="_blank">Wikipedia</a></p>
+          <img src="img/James_Chadwick.jpg" width="485" height="402">
+          <p>James Chadwick foi um físico britânico, colaborador de Ernest Rutherford. Seu principal contributo para a
+            ciência foi a prova da existência do nêutron. Por esta descoberta, foi-lhe atribuído o Nobel de Física em
+            1935.<a href="https://pt.wikipedia.org/wiki/James_Chadwick" target="_blank">Wikipedia</a></p>
+          <img src="img/Marie.jpg" width="485" height="402">
+          <p>Marie Skłodowska-Curie, nascida Maria Salomea Skłodowska, foi uma física e química polonesa naturalizada
+            francesa, que conduziu pesquisas pioneiras sobre radioatividade<a
+              href="https://pt.wikipedia.org/wiki/Marie_Curie" target="_blank">Wikipedia</a></p>
+          <img src="img/tesla.jpeg" width="485" height="402">
+          <p>Nikola Tesla foi um inventor, engenheiro eletrotécnico e engenheiro mecânico sérvio, mais conhecido por
+            suas contribuições ao projeto do moderno sistema de fornecimento de eletricidade em corrente alternada.<a
+              href="https://pt.wikipedia.org/wiki/Nikola_Tesla" target="_blank">Wikipedia</a></p>
+          <img src="img/TIM-BERNERS-LEE.jpg" width="485" height="402">
+          <p>Timothy John Berners-Lee KBE, OM, FRS é um físico britânico, cientista da computação e professor do MIT. É
+            o criador da World Wide Web, tendo feito a primeira proposta para sua criação a 12 de março de 1989.<a
+              href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Wikipedia</a></p>
+        </div>
 
-        <h1>Jogo da forca</h1>
+        </section>
 
-        <iframe src="https://scratch.mit.edu/projects/537082037/embed" allowtransparency="true" width="485" height="402"
-            frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <!-- Rodapé -->
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit aut at omnis a, fugit, nemo enim suscipit
-            tempora
-            aliquam debitis pariatur delectus deleniti repellat. Officiis nemo fuga quisquam molestiae ducimus?
-        </p>
+        <section class="footer">
+          <div class="cont">
+            <ul>
+                <li class="grid-8"><h2>PUC MINAS 2021(Coraçao Eucarístico)</h2>
+                <p>Membros:</p>
+                <li>-Alisson Almeida -Enrico Menicucci -Gabriel Felipe</li>
+            </ul>
 
-    </div>
-    
+          </div>
+
+        </section>
+
 </body>
-
-<footer>
-    jogo pika
-</footer>
 
 </html>
