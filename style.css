@@ -1,0 +1,26 @@
+header{
+    background-color: lightgray;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.jogoForca{
+    margin-top: 20px;
+    float: left;
+}
+
+/* Rodape */
+
+.footer{
+    height: 100px;
+    background: gray;
+}
+
+p,h1,h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
